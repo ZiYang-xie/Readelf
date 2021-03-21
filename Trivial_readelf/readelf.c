@@ -388,10 +388,12 @@ int main(int argc, char *argv[])
         fclose(fp);
     }
     else if(!strcmp(argv[1], "-H") || !strcmp(argv[1], "--help"))
+        showHelp();
+
+    else 
     {
         showHelp();
         return -1;
     }
-    else 
-        showHelp();
+    return 0;
 }

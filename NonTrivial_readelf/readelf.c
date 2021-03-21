@@ -318,6 +318,7 @@ int main(int argc, char *argv[])
         getMachine();
         getE_Version();
 
+        // buff[4] indicates 32bits or 64bits elf
         int bitSz = 4 * buff[4];
         int sz[] = {
             bitSz, bitSz, bitSz,
@@ -328,10 +329,11 @@ int main(int argc, char *argv[])
         fclose(fp);
     }
     else if(!strcmp(argv[1], "-H") || !strcmp(argv[1], "--help"))
+        showHelp();
+    else 
     {
         showHelp();
         return -1;
     }
-    else 
-        showHelp();
+    return 0;
 }
