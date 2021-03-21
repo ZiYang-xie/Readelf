@@ -109,7 +109,7 @@ void getOS()
 {
     printf(" OS/ABI:");
     printf("\t\t\t\t");
-    char *OS[] = {
+    const char *OS[] = {
         "System V", 
         "HP-UX", 
         "NetBSD",
@@ -154,7 +154,7 @@ void getType()
 {
     printf(" Type:");
     printf("\t\t\t\t\t");
-    char *TYPE[] = {
+    const char *TYPE[] = {
         "NONE (Unknown file)",
         "REL (Relocatable file)",
         "EXEC (Executable file)",
@@ -187,7 +187,7 @@ void getMachine()
     printf(" Machine:");
     printf("\t\t\t\t");
     // Part of the Machine //TODO
-    char *MACHINE[] = {
+    const char *MACHINE[] = {
         "No specific instruction set",
         "AT&T WE 32100",
         "SPARC",

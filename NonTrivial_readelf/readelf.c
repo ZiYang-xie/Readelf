@@ -134,7 +134,7 @@ void getOS()
 {
     printf(" OS/ABI:");
     printf("\t\t\t\t");
-    char *OS[] = {
+    const char *OS[] = {
         "System V", 
         "HP-UX", 
         "NetBSD",
